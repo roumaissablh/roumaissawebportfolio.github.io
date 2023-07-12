@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Exo+2:wght@900&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Nunito:wght@200;300;400;600;700&family=Open+Sans&family=Outfit:wght@200;700&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --pink : #f43b64;
+    --white-pink : #fa9bb0;
+    --white-2 : #fcfefe;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav section */
+
+nav{
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+}
+
+.navbar-brand img{
+    width: 15rem;
+}
+
+.navbar-nav li{
+    margin-right: 1rem;
+}
+
+.navbar-nav li a{
+    color: white;
+    text-transform: uppercase;
+    transition: .3rem;
+  transform-origin: right;
+}
+.navbar-nav li a:hover{
+    color: #f43b64;
+}
+
+/* home section */
+
+.home{
+    height: 100vh;
+    background-image: url(./images/télécharger.jfif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 3rem;
+}
+
+.home .home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.home .home-content h1{
+    color: white;
+}
+.home .home-content h2{
+    color: #f43b64;
+}
+.home .home-content p{
+    color: white;
+    margin-top: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+section .btn{
+    background-color: #f43b64;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: .7rem 2rem;
+}
+section .btn:hover{
+    background: none;
+    border: 2px solid var(--pink);
+    color: white;
+}
+
+.home .home-content button{
+    margin-top: 2rem;
+    
+}
+.home .home-content button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* about section */
+
+.sec .heading{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+.sec .heading span{
+    color: #f43b64;
+    text-transform: uppercase;
+}
+
+.sec .content{
+    margin-top: 2rem;
+}
+.about .about-content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about .about-content::after{
+    content: '';
+    background-color: #f43b64;
+    width: 5rem;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+.about .about-content p{
+        text-align: center;
+        color: white;
+        width:60% ;
+        line-height: 2rem;
+        font-weight: 300;
+}
+.about .about-content p span{
+    color: #f43b64;
+    text-transform: uppercase;
+}
+
+/* skills section */
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 3rem;
+    justify-content: center;
+
+}
+
+.skills .skills-content{
+    margin-top: 5rem;
+}
+
+.skills .skills-content .box{
+    width: 40%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-content .box span{
+    background-color: #f43b64;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.skills .skills-content .box h4{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.skills .skills-content .box p{
+    width: 80%;
+    /* margin-top: 1rem; */
+    font-size: .8rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    overflow: hidden; 
+    padding: 2rem;
+  }
+  
+  .project {
+    /* flex: 0 0 25%; 
+    height: 200px; */
+    width: 30%;
+    margin-top: 2rem;
+    border-radius: 8px;
+    position: relative;
+    transform-origin: top;
+    cursor: pointer;
+    /* padding: 1rem; */
+  }
+  .projects-container .project::after {
+    content: '';
+    background-color: #f43b64;
+    width: 6rem;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+  }
+  .project a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project  img{
+    width: 100%;
+  }
+  .project a h3{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .project a span{
+    /* position: absolute;
+    right: 1rem;
+    top: 10.5rem; */
+    color: #f43b64;
+  }
+
+
+  .projects-container .project:hover::before {
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 59, 100, 0.5);
+  transition: top 0.3s ease-in-out;
+  transform: translateY(0);
+
+  }
+  .projects-container .project:hover{
+    z-index: 1;
+    transform: scale(1.05);
+  }
+
+
+  .text a,
+  text a:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: white;
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+  }
+  .text:hover{
+    letter-spacing: 1px;
+  }
+
+  /* footer */
+
+  footer{
+    padding: 2rem;
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  footer img{
+    width: 20rem;
+  }
+  footer .quote{
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  footer .bottom{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 90%;
+    margin-top: 1rem;
+  }
+  footer .bottom .contact span{
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  footer .bottom .social span{
+    font-style: italic;
+    font-weight: 500;
+  }
+  footer .bottom .social span i{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  footer .bottom .social span i:hover{
+    color: #f43b64;
+    background-color: black;
+    border-radius: 50%;
+    padding: .2rem;
+  }
+
+
+/* ///////////////////////////////////////////// */
+
+@media (max-width : 770px){
+
+    .navbar-toggler i{
+        color: white;
+        font-size: 2rem;
+    }
+
+    .navbar-nav li{
+        padding:  1rem;
+    }
+
+    .about .about-content p{
+        width: 90%;
+    }
+
+    .skills .skills-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills .skills-content .box{
+        width: 90%;
+    }
+
+
+    .projects-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS devices */
+      }
+    
+      .project {
+        flex: 0 0 auto;
+        width: 75%; /* Adjust the width to control the number of visible projects */
+        margin-right: 10px; /* Add spacing between projects */
+        scroll-snap-align: start;
+        transition: transform 0.3s ease-in-out;
+      }
+    
+      .project:last-child {
+        margin-right: 0;
+      }
+    
+      /* Ensure the projects slide horizontally */
+      .projects-container:hover .project {
+        transform: translateX(-50%);
+      }
+
+      .project{
+        width: 90%;
+      }
+      .projects-container{
+        gap: 1rem;
+      }
+    
+}
+
+
+@media (max-width : 500px){
+    .navbar-brand img{
+        width: 10rem;
+    }
+
+    .home .home-content h1{
+        font-size: 2rem;
+    }
+    .home .home-content h2{
+        font-size: 1.3rem;
+    }
+    .home .home-content p{
+        font-size: .8rem;
+    }
+    .navbar-toggler i{
+        font-size: 1rem;
+    }
+
+    .about .about-content p{
+        font-size: .8rem;
+    }
+    .skills .skills-content .box{
+        width: 100%;
+    }
+    .skills .skills-content .box p{
+        width: 100%;
+    }
+
+
+    footer img{
+        width: 12rem;
+    }
+    footer .quote{
+        font-size: .9rem;
+    }
+    footer .bottom{
+        font-size: .6rem;
+    }
+}
